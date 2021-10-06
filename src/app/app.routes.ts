@@ -22,7 +22,7 @@ import { LoginComponent } from './login/login.component';
 import { DocumentsComponent } from './documents/documents.component';
 import { AppLayoutComponent } from './app-layout/app-layout.component';
 import { FileViewComponent } from './file-view/file-view.component';
-import { ComponentTesteComponent } from './component-teste/component-teste.component';
+
 
 
 export const appRoutes: Routes = [
@@ -38,7 +38,8 @@ export const appRoutes: Routes = [
     children: [
       {
         path: 'home',
-        component: ComponentTesteComponent
+        component: HomeComponent,
+        canActivate: [AuthGuardEcm]
       },
       {
         path: 'documents',

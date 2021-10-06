@@ -16,7 +16,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { DocumentsComponent } from './documents/documents.component';
 import { AppLayoutComponent } from './app-layout/app-layout.component';
-import { ComponentTesteComponent } from './component-teste/component-teste.component';
+
 
 // Localization
 import { registerLocaleData } from '@angular/common';
@@ -75,8 +75,7 @@ registerLocaleData(localeSv);
         DocumentsComponent,
         AppLayoutComponent,
         FileViewComponent,
-        ComponentTesteComponent, 
-        ComponentTesteComponent, CardComponent
+        CardComponent
     ],
     providers: [
         PreviewService,

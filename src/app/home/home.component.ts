@@ -15,11 +15,20 @@
  * limitations under the License.
  */
 
-import { Component } from '@angular/core';
+import { AlfrescoApiService, AuthenticationService } from '@alfresco/adf-core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent {}
+export class HomeComponent implements OnInit {
+  usName = null;
+  constructor(private apiService: AlfrescoApiService, private authService: AuthenticationService) {
+  }
+  ngOnInit() {
+    const api = this.apiService.getInstance();
+    this.usName = this.authService.getEcmUsername();
+  }
+}
