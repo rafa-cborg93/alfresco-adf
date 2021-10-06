@@ -1,0 +1,10 @@
+mat-card{
+    margin: 5px;
+    min-height: 250px;
+    
+    width: 90%;
+}
+mat-card-title{
+    margin-bottom: 20px;
+}
+

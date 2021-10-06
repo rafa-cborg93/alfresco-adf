@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.container h1{
+    margin-left: 20px;
+}
+.dashboard{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.content-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+}
+.content-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 60%;
+}
