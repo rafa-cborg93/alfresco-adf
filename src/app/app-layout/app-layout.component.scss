@@ -1,7 +1,17 @@
 adf-sidenav-layout {
   height: 100%;
 }
+.toggle-btn{
+  position: absolute;
+  height: 100px;
+}
 .btn-lang {
   position: absolute;
   right: 20px;
+}
+@media screen and (max-width: 375px) {
+.mat-drawer{
+   margin-top: 55px !important;
+  }
+  
 }

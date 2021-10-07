@@ -23,8 +23,6 @@ import { DocumentsComponent } from './documents/documents.component';
 import { AppLayoutComponent } from './app-layout/app-layout.component';
 import { FileViewComponent } from './file-view/file-view.component';
 
-
-
 export const appRoutes: Routes = [
   {
     path: '',

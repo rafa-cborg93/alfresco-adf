@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { CoreModule, TRANSLATION_PROVIDER, TranslateLoaderService, CoreAutomationService } from '@alfresco/adf-core';
+import { CoreModule, TRANSLATION_PROVIDER, TranslateLoaderService, CoreAutomationService, SidenavLayoutComponent } from '@alfresco/adf-core';
 import { ContentModule } from '@alfresco/adf-content-services';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 
@@ -75,7 +75,8 @@ registerLocaleData(localeSv);
         DocumentsComponent,
         AppLayoutComponent,
         FileViewComponent,
-        CardComponent
+        CardComponent,
+        
     ],
     providers: [
         PreviewService,
