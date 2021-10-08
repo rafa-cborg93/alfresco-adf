@@ -11,21 +11,17 @@ adf-sidenav-layout {
 }
 .adf_sidebar_actmenu {
   position: absolute;
-  margin-bottom: 15px;
   right: 90px;
-}
-// .adf_sidebar_actmenu:active {
-//   background-color: green;
-// }
-.adf_sidebar_actmenu_nome_usuario {
-  color: #fff;
-  font-size: 14px;
   text-transform: uppercase;
 }
+
 .adf_sidebar_actmenu_icon {
   display: none;
 }
 @media only screen and (max-width: 425px) {
+  .adf_sidebar_actmenu {
+    right: 50px;
+  }
   .adf_sidebar_actmenu_nome_usuario {
     display: none;
   }
@@ -33,7 +29,4 @@ adf-sidenav-layout {
     display: block;
     color: #fff;
   }
-  // .adf-sidebar-menu-expand-icon {
-  //   max-width: 100px;
-  // }
 }

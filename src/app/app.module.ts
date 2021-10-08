@@ -16,6 +16,8 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { DocumentsComponent } from './documents/documents.component';
 import { AppLayoutComponent } from './app-layout/app-layout.component';
+import { CardComponent } from './shared/card/card.component';
+import { ButtonComponent } from './shared/button/button.component';
 
 
 // Localization
@@ -36,7 +38,8 @@ import localePl from '@angular/common/locales/pl';
 import localeFi from '@angular/common/locales/fi';
 import localeDa from '@angular/common/locales/da';
 import localeSv from '@angular/common/locales/sv';
-import { CardComponent } from './shared/card/card.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 
 registerLocaleData(localeFr);
@@ -60,6 +63,8 @@ registerLocaleData(localeSv);
     imports: [
         BrowserModule,
         BrowserAnimationsModule,
+        MatButtonModule,
+        MatIconModule,
         RouterModule.forRoot(appRoutes, { initialNavigation: true }),
         // ADF modules
         CoreModule.forRoot(),
@@ -76,7 +81,8 @@ registerLocaleData(localeSv);
         AppLayoutComponent,
         FileViewComponent,
         CardComponent,
-        
+        ButtonComponent,
+
     ],
     providers: [
         PreviewService,
