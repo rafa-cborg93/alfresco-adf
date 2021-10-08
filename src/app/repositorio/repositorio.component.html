@@ -1,0 +1,33 @@
+<mat-toolbar mat-z4>
+  Repositórios
+</mat-toolbar>
+<div class="container">
+
+  <!--menu de seleção de conteudo-->
+  <button mat-button [matMenuTriggerFor]="menuSelecionar">Selecionar</button>
+  <mat-menu #menuSelecionar="matMenu">
+    <app-button [btn_icon]="'description'" [btn_label]="'Documentos'"></app-button>
+    <app-button [btn_icon]="'folder'" [btn_label]="'Pastas'"></app-button>
+    <app-button [btn_icon]="'check_circle'" [btn_label]="'Tudo'"></app-button>
+    <app-button [btn_icon]="'sync'" [btn_label]="'Inverter seleção'"></app-button>
+    <app-button [btn_icon]="'highlight_off'" [btn_label]="'Nenhum'"></app-button>
+  </mat-menu>
+  <!--menu de criação de conteudo-->
+  <button mat-button [matMenuTriggerFor]="menuCriar">
+    <mat-icon>add</mat-icon>
+    Criar
+  </button>
+  <mat-menu #menuCriar="matMenu">
+    <app-button [btn_icon]="'folder'" [btn_label]="'Pasta'"></app-button>
+    <app-button [btn_icon]="'description'" [btn_label]="'Texto simples'"></app-button>
+    <app-button [btn_icon]="'description'" [btn_label]="'HTML'"></app-button>
+    <app-button [btn_icon]="'code'" [btn_label]="'XML'"></app-button>
+    <app-button [btn_icon]="'description'" [btn_label]="'Documento Google docs'"></app-button>
+    <app-button [btn_icon]="'description'" [btn_label]="'Planilha Google docs'"></app-button>
+    <app-button [btn_icon]="'description'" [btn_label]="'Apresentação Google docs'"></app-button>
+  </mat-menu>
+  <!--menu de carregamento de conteudo-->
+  <button mat-button>
+    <mat-icon>publish</mat-icon>Carrgar
+  </button>
+</div>

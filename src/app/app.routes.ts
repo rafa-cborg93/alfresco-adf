@@ -1,3 +1,4 @@
+import { RepositorioComponent } from './repositorio/repositorio.component';
 /*!
  * @license
  * Copyright 2016 Alfresco Software, Ltd.
@@ -42,6 +43,11 @@ export const appRoutes: Routes = [
       {
         path: 'documents',
         component: DocumentsComponent,
+        canActivate: [AuthGuardEcm]
+      },
+      {
+        path:'repositories',
+        component:RepositorioComponent,
         canActivate: [AuthGuardEcm]
       }
     ]

@@ -40,6 +40,7 @@ import localeDa from '@angular/common/locales/da';
 import localeSv from '@angular/common/locales/sv';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { RepositorioComponent } from './repositorio/repositorio.component';
 
 
 registerLocaleData(localeFr);
@@ -82,6 +83,7 @@ registerLocaleData(localeSv);
         FileViewComponent,
         CardComponent,
         ButtonComponent,
+        RepositorioComponent,
 
     ],
     providers: [
