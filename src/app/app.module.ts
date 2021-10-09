@@ -41,6 +41,8 @@ import localeSv from '@angular/common/locales/sv';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { RepositorioComponent } from './repositorio/repositorio.component';
+import { ListaRepositorioComponent } from './components/lista-repositorio/lista-repositorio.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 
 registerLocaleData(localeFr);
@@ -66,6 +68,7 @@ registerLocaleData(localeSv);
         BrowserAnimationsModule,
         MatButtonModule,
         MatIconModule,
+        MatPaginatorModule,
         RouterModule.forRoot(appRoutes, { initialNavigation: true }),
         // ADF modules
         CoreModule.forRoot(),
@@ -84,6 +87,7 @@ registerLocaleData(localeSv);
         CardComponent,
         ButtonComponent,
         RepositorioComponent,
+        ListaRepositorioComponent,
 
     ],
     providers: [

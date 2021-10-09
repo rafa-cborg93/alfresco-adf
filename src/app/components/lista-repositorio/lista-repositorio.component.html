@@ -1,0 +1,14 @@
+<mat-list>
+  <div mat-subheader>Lista de Repositórios</div>
+  <mat-list-item *ngFor="let folder of folders">
+    <mat-icon mat-list-icon>folder</mat-icon>
+    <div mat-line class="mat-list-name">{{folder.name}}</div>
+    <div mat-line>Status: {{folder.status}}</div>
+    <div mat-line>Usuário: {{folder.ususario}}</div>
+    <div mat-line>Permissões: {{folder.permissoes}}</div>
+    <div mat-line> Criação: {{folder.updated | date}} </div>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+</mat-list>
+<mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page">
+</mat-paginator>
