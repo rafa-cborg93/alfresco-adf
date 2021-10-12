@@ -18,6 +18,13 @@ import { DocumentsComponent } from './documents/documents.component';
 import { AppLayoutComponent } from './app-layout/app-layout.component';
 import { CardComponent } from './shared/card/card.component';
 import { ButtonComponent } from './shared/button/button.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { RepositorioComponent } from './repositorio/repositorio.component';
+import { ListaRepositorioComponent } from './components/lista-repositorio/lista-repositorio.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { HeaderComponent } from './components/header/header.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
 
 
 // Localization
@@ -38,11 +45,6 @@ import localePl from '@angular/common/locales/pl';
 import localeFi from '@angular/common/locales/fi';
 import localeDa from '@angular/common/locales/da';
 import localeSv from '@angular/common/locales/sv';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
-import { RepositorioComponent } from './repositorio/repositorio.component';
-import { ListaRepositorioComponent } from './components/lista-repositorio/lista-repositorio.component';
-import { MatPaginatorModule } from '@angular/material/paginator';
 
 
 registerLocaleData(localeFr);
@@ -88,6 +90,8 @@ registerLocaleData(localeSv);
         ButtonComponent,
         RepositorioComponent,
         ListaRepositorioComponent,
+        HeaderComponent,
+        SidenavComponent,
 
     ],
     providers: [

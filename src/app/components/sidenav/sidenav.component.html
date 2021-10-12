@@ -1,0 +1,39 @@
+<adf-sidenav-layout-navigation>
+  <ng-template let-isMenuMinimized="isMenuMinimized">
+    <mat-nav-list class="adf-sidenav-linklist">
+      <a mat-list-item class="adf-sidenav-link" routerLink="/ecm/home">
+        <mat-icon matListIcon class="sidenav-menu-icon">home</mat-icon>
+        <div class="sidenav-menu-label" *ngIf="!isMenuMinimized()">Home</div>
+      </a>
+      <a mat-list-item class="adf-sidenav-link" routerLink="/ecm/documents">
+        <mat-icon matListIcon class="sidenav-menu-icon">folder_open</mat-icon>
+        <div class="sidenav-menu-label" *ngIf="!isMenuMinimized()">Documentos</div>
+      </a>
+      <a mat-list-item class="adf-sidenav-link" routerLink="/ecm/sites">
+        <mat-icon matListIcon class="sidenav-menu-icon">public</mat-icon>
+        <div class="sidenav-menu-label" *ngIf="!isMenuMinimized()">Sites</div>
+      </a>
+      <a mat-list-item class="adf-sidenav-link" routerLink="/ecm/tasks">
+        <mat-icon matListIcon class="sidenav-menu-icon">task</mat-icon>
+        <div class="sidenav-menu-label" *ngIf="!isMenuMinimized()">Tarefas</div>
+      </a>
+      <a mat-list-item class="adf-sidenav-link" routerLink="/ecm/repositories">
+        <mat-icon matListIcon class="sidenav-menu-icon">storage</mat-icon>
+        <div class="sidenav-menu-label" *ngIf="!isMenuMinimized()">Repositorios</div>
+      </a>
+      <a mat-list-item class="adf-sidenav-link" routerLink="/ecm/tools">
+        <mat-icon matListIcon class="sidenav-menu-icon">build</mat-icon>
+        <div class="sidenav-menu-label" *ngIf="!isMenuMinimized()">Ferramentas</div>
+      </a>
+      <a mat-list-item adf-logout class="adf-sidenav-link">
+        <mat-icon matListIcon class="sidenav-menu-icon">exit_to_app</mat-icon>
+        <div class="sidenav-menu-label" *ngIf="!isMenuMinimized()">Logout</div>
+      </a>
+    </mat-nav-list>
+  </ng-template>
+</adf-sidenav-layout-navigation>
+<adf-sidenav-layout-content>
+  <ng-template>
+    <router-outlet></router-outlet>
+  </ng-template>
+</adf-sidenav-layout-content>
