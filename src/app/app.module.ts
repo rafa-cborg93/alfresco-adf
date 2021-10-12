@@ -8,23 +8,26 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 
 import { appRoutes } from './app.routes';
 import { PreviewService } from './services/preview.service';
-import { FileViewComponent } from './file-view/file-view.component';
+import { FileViewComponent } from './components/file-view/file-view.component';
 
 // App components
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
-import { DocumentsComponent } from './documents/documents.component';
+import { HomeComponent } from './views/home/home.component';
+import { LoginComponent } from './views/login/login.component';
+import { DocumentsComponent } from './views/documents/documents.component';
 import { AppLayoutComponent } from './app-layout/app-layout.component';
 import { CardComponent } from './shared/card/card.component';
 import { ButtonComponent } from './shared/button/button.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { RepositorioComponent } from './repositorio/repositorio.component';
+import { RepositorioComponent } from './views/repositorio/repositorio.component';
 import { ListaRepositorioComponent } from './components/lista-repositorio/lista-repositorio.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { HeaderComponent } from './components/header/header.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { SitesComponent } from './views/sites/sites.component';
+import { TarefasComponent } from './views/tarefas/tarefas.component';
+import { FerramentasComponent } from './views/ferramentas/ferramentas.component';
 
 
 // Localization
@@ -92,6 +95,9 @@ registerLocaleData(localeSv);
         ListaRepositorioComponent,
         HeaderComponent,
         SidenavComponent,
+        SitesComponent,
+        TarefasComponent,
+        FerramentasComponent,
 
     ],
     providers: [
