@@ -1,14 +1,51 @@
-<mat-list>
+<!-- <mat-list>
   <div mat-subheader>Lista de Repositórios</div>
   <mat-list-item *ngFor="let folder of folders">
-    <mat-icon mat-list-icon>folder</mat-icon>
+    <mat-icon mat-list-icon class="folder-icon">
+      <img src="../../../assets/img/ft_ic_folder.svg" alt="icone de pasta">
+    </mat-icon>
     <div mat-line class="mat-list-name">{{folder.name}}</div>
     <div mat-line>Status: {{folder.status}}</div>
     <div mat-line>Usuário: {{folder.ususario}}</div>
     <div mat-line>Permissões: {{folder.permissoes}}</div>
     <div mat-line> Criação: {{folder.updated | date}} </div>
   </mat-list-item>
-  <mat-divider></mat-divider>
-</mat-list>
+</mat-list> -->
+
+<table mat-table [dataSource]="dataSource" class=" tabela mat-elevation-z8">
+
+  <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+  <!-- Position Column -->
+  <ng-container matColumnDef="position">
+    <th mat-header-cell *matHeaderCellDef> Repositório </th>
+    <td mat-cell *matCellDef="let element"> <img src="../../../assets/img/ft_ic_folder.svg" > {{element.name}} </td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> Tamanho </th>
+    <td mat-cell *matCellDef="let element"> {{element.tamanho}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="weight">
+    <th mat-header-cell *matHeaderCellDef> Modificado </th>
+    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="symbol">
+    <th mat-header-cell *matHeaderCellDef> Modificado por </th>
+    <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+
+
 <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page">
 </mat-paginator>

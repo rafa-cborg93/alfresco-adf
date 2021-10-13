@@ -24,7 +24,6 @@ import { RepositorioComponent } from './views/repositorio/repositorio.component'
 import { ListaRepositorioComponent } from './components/lista-repositorio/lista-repositorio.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { HeaderComponent } from './components/header/header.component';
-import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { SitesComponent } from './views/sites/sites.component';
 import { TarefasComponent } from './views/tarefas/tarefas.component';
 import { FerramentasComponent } from './views/ferramentas/ferramentas.component';
@@ -48,6 +47,8 @@ import localePl from '@angular/common/locales/pl';
 import localeFi from '@angular/common/locales/fi';
 import localeDa from '@angular/common/locales/da';
 import localeSv from '@angular/common/locales/sv';
+import { BtnProfileComponent } from './components/btn-profile/btn-profile.component';
+import { BtnLangComponent } from './components/btn-lang/btn-lang.component';
 
 
 registerLocaleData(localeFr);
@@ -94,10 +95,11 @@ registerLocaleData(localeSv);
         RepositorioComponent,
         ListaRepositorioComponent,
         HeaderComponent,
-        SidenavComponent,
         SitesComponent,
         TarefasComponent,
         FerramentasComponent,
+        BtnProfileComponent,
+        BtnLangComponent,
 
     ],
     providers: [

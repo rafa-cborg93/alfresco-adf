@@ -7,19 +7,7 @@
         <a class="toggle-btn" (click)="toggleMenu()">
           <mat-icon>menu</mat-icon>
         </a>
-
-        <button mat-button [matMenuTriggerFor]="menu" class="adf_sidebar_actmenu">
-          <mat-label class="adf_sidebar_actmenu_nome_usuario">{{usName}}</mat-label>
-          <mat-icon class="adf_sidebar_actmenu_icon">account_circle</mat-icon>
-        </button>
-        <mat-menu #menu="matMenu">
-          <app-button [btn_icon]="'account_circle'" [btn_label]="'Meu Perfil'"></app-button>
-          <app-button [btn_icon]="'help'" [btn_label]="'Ajuda'"></app-button>
-          <mat-divider></mat-divider>
-          <app-button [btn_icon]="'key'" [btn_label]="'Alterar senha'"></app-button>
-          <app-button [btn_icon]="'logout'" [btn_label]="'Logout'"></app-button>
-        </mat-menu>
-
+        <app-btn-profile></app-btn-profile>
         <button class="btn-lang" mat-icon-button [matMenuTriggerFor]="langMenu">
           <mat-icon>language</mat-icon>
         </button>
@@ -29,7 +17,7 @@
       </adf-layout-header>
     </ng-template>
   </adf-sidenav-layout-header>
-  <!--menu lateral-->
+ 
   <adf-sidenav-layout-navigation>
     <ng-template let-isMenuMinimized="isMenuMinimized">
       <mat-nav-list class="adf-sidenav-linklist">
