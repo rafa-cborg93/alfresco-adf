@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 
 // export interface Section {
 //   name: string;
@@ -9,18 +9,18 @@ import { Component, OnInit } from '@angular/core';
 // }
 
 export interface Section {
+  icone: string;
   name: string;
-  position: number;
-  weight: number;
+  update: Date;
   tamanho: string;
-  symbol: string;
+  user: string;
 }
 
 const ELEMENT_DATA: Section[] = [
-  {position: 1, name: 'Photos', tamanho:'123Mb', weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'Recipes', tamanho:'123.3Kb',weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Works', tamanho:'43Mb', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'RH', tamanho: '23.1Kb', weight: 9.0122, symbol: 'Be'},
+  {icone: '',  name: 'Photos', tamanho: '123Mb', update: new Date('01/12/2020'), user: 'admin'},
+  {icone: '', name: 'Recipes', tamanho: '123.3Kb', update: new Date('01/12/2020'), user: 'root'},
+  {icone: '', name: 'Works', tamanho: '43Mb', update: new Date('01/12/2020'), user: 'rafael.borges'},
+  {icone: '', name: 'RH', tamanho: '23.1Kb', update: new Date('1/1/20'), user: 'rc.costa'},
 
 ];
 
@@ -29,7 +29,7 @@ const ELEMENT_DATA: Section[] = [
   templateUrl: './lista-repositorio.component.html',
   styleUrls: ['./lista-repositorio.component.css']
 })
-export class ListaRepositorioComponent implements OnInit {
+export class ListaRepositorioComponent {
   // folders: Section[] = [
   //   {
   //     name: 'Photos',
@@ -54,12 +54,8 @@ export class ListaRepositorioComponent implements OnInit {
   //   }
   // ];
 
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  displayedColumns: string[] = ['icone', 'name', 'tamanho', 'update', 'user'];
   dataSource = ELEMENT_DATA;
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
