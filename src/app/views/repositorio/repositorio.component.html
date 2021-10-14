@@ -1,5 +1,5 @@
 <adf-toolbar>
-  <adf-toolbar-title>Repositórios</adf-toolbar-title>
+  <adf-toolbar-title class="title">Repositórios</adf-toolbar-title>
 </adf-toolbar>
 <div class="container">
   <!--menu de seleção de conteudo-->
@@ -31,3 +31,6 @@
   </button>
 </div>
 <app-lista-repositorio></app-lista-repositorio>
+<mat-paginator class="paginator" [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]"
+  aria-label="Select page">
+</mat-paginator>

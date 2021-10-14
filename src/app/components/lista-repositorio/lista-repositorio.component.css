@@ -1,7 +1,9 @@
-mat-list-item{
-  border-bottom: 1px solid rgb(0,0,0,.2);
+mat-list-item {
+  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
 }
-.tabela{
+.tabela {
   width: 100%;
 }
-
+.paginator {
+  bottom: 0;
+}

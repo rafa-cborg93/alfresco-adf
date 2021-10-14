@@ -2,3 +2,12 @@
   display: flex;
   justify-content: space-around;
 }
+.title {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.paginator {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

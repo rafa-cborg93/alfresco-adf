@@ -21,6 +21,16 @@ const ELEMENT_DATA: Section[] = [
   {icone: '', name: 'Recipes', tamanho: '123.3Kb', update: new Date('01/12/2020'), user: 'root'},
   {icone: '', name: 'Works', tamanho: '43Mb', update: new Date('01/12/2020'), user: 'rafael.borges'},
   {icone: '', name: 'RH', tamanho: '23.1Kb', update: new Date('1/1/20'), user: 'rc.costa'},
+  {icone: '',  name: 'Photos', tamanho: '123Mb', update: new Date('01/12/2020'), user: 'admin'},
+  {icone: '', name: 'Recipes', tamanho: '123.3Kb', update: new Date('01/12/2020'), user: 'root'},
+  {icone: '', name: 'Works', tamanho: '43Mb', update: new Date('01/12/2020'), user: 'rafael.borges'},
+  {icone: '', name: 'RH', tamanho: '23.1Kb', update: new Date('1/1/20'), user: 'rc.costa'},
+  {icone: '',  name: 'Photos', tamanho: '123Mb', update: new Date('01/12/2020'), user: 'admin'},
+  {icone: '', name: 'Recipes', tamanho: '123.3Kb', update: new Date('01/12/2020'), user: 'root'},
+  {icone: '', name: 'Works', tamanho: '43Mb', update: new Date('01/12/2020'), user: 'rafael.borges'},
+  {icone: '', name: 'RH', tamanho: '23.1Kb', update: new Date('1/1/20'), user: 'rc.costa'},
+  {icone: '',  name: 'Photos', tamanho: '123Mb', update: new Date('01/12/2020'), user: 'admin'},
+
 
 ];
 
