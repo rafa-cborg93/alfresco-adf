@@ -1,6 +1,6 @@
+import { AlfrescoApiService, AuthenticationService} from '@alfresco/adf-core';
+import {Component,OnInit, Input} from '@angular/core';
 
-import { AlfrescoApiService, AuthenticationService } from '@alfresco/adf-core';
-import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -10,8 +10,9 @@ import { Component, OnInit } from '@angular/core';
 export class AppLayoutComponent implements OnInit{
   usName: string = null;
   isMember = 0;
-
+  @Input() logo: string;
   constructor(private apiService: AlfrescoApiService, private authService: AuthenticationService) {
+
   }
   ngOnInit(){
     const api = this.apiService.getInstance();
@@ -22,6 +23,13 @@ export class AppLayoutComponent implements OnInit{
         this.isMember = 1;
       }
     })
-  }
 
+    if (!this.logo) {
+      this.logo = '../../assets/img/logo.png';
+  }
+  }
 }
+
+
+
+

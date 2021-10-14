@@ -3,7 +3,7 @@
 
   <adf-sidenav-layout-header>
     <ng-template let-toggleMenu="toggleMenu">
-      <adf-layout-header id="adf-header" [title]="'C2A Solutions GED'" color="warn">
+      <adf-layout-header logo={{logo}} id="adf-header" [title]="'CBorges Solutions GED'" color="accent">
         <a class="toggle-btn" (click)="toggleMenu()">
           <mat-icon>menu</mat-icon>
         </a>
@@ -17,7 +17,7 @@
       </adf-layout-header>
     </ng-template>
   </adf-sidenav-layout-header>
- 
+
   <adf-sidenav-layout-navigation>
     <ng-template let-isMenuMinimized="isMenuMinimized">
       <mat-nav-list class="adf-sidenav-linklist">
